@@ -1,0 +1,32 @@
+What is HTML?
+1.2 History and Evolution of HTML
+1.3 Basics of Web Development
+1.4 Tools for Writing HTML
+2. HTML Structure
+2.1 Basic HTML Document Structure
+2.2 DOCTYPE Declaration
+2.3 HTML Tags, Elements, and Attributes
+2.4 Nested and Empty Elements
+3. Text and Formatting
+3.1 Headings (<h1> to <h6>)
+3.2 Paragraphs (<p>)
+3.3 Text Formatting Tags (e.g., <b>, <i>, <strong>, <em>)
+3.4 Line Breaks (<br>) and Horizontal Rules (<hr>)
+
+
+
+binary === 
+
+
+
+a ==  00001111.     8 bit 
+
+b ==  10101010
+ 
+ c == 11110000
+
+
+
+
+
+
