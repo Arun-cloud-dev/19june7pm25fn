@@ -1,0 +1,96 @@
+/* * {
+    margin-left: 40px;
+    font-style: italic;
+    
+} */
+
+
+p{
+    color: blue;
+    font-size: 60px;
+}
+
+
+.red{
+    color: red;
+}
+
+
+#ar{
+    font-size: 20px;
+}
+
+
+
+
+h1, h2, h3{
+    color: green;
+}
+
+
+
+input[type="text"]{
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+  
+}
+
+input:focus{
+    background-color: lightblue;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+
+button:hover{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+
+
+p::before{
+    content: "👉";
+    color: red;
+}
+
+
+p::after{
+    content: " 🐣";
+    color: red;
+}
+
+
+.box{
+    width:200px;
+    height: 100px;
+    border-style:groove;
+    border-width: 45px;
+    border-color: sandybrown;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding-top: 200px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+
+
+
+}
+
+
+.br{
+    height: 20px;
+}
