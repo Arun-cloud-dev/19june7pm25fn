@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch </title>
+</head>
+<body>
+    <h2>Choose a day:</h2>
+    <select id="daySelect">
+        <option value="">--Select--</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Friday">Friday</option>
+    </select>
+    
+    <button onclick="checkday()" >Check Day</button>
+    
+    <p id="result"></p>
+
+<script>
+    function checkday(){
+        let day = document.getElementById('daySelect').value;
+
+        let message ="";
+
+
+
+        switch (day) {
+            case "Monday":
+                message = (" start the day with a smile ");
+                break;
+            case "Tuesday":
+                message = (" start the day with a smile coz tuesady  ");
+                break;
+            case "Wednesday":
+                message =(" start the day with a smile coz Wednesday ");
+                break;
+            case "Thursday":
+                message =(" start the day with a smile coz Thursday ");
+                break;
+            default:
+            message = ("error in ypur day are alive coz yu are dead  ");
+
+        }
+
+
+        document.getElementById("result").innerText  = message
+
+
+
+    }
+    </script>
+
+
+  
+</body>
+</html>
