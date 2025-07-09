@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h2>Using for loop </h2>
+    <ul id="for-list">
+    </ul>
+
+<h2>Using whiloe loop </h2>
+
+<ul  id="while-list">
+
+</ul>
+
+
+
+<h1>Using for...of</h1>
+
+<ul id="forof-list">
+
+</ul>
+
+
+
+<ul id="object-list">
+
+</ul>
+
+
+
+    
+
+
+
+
+    <script>
+        const forList = document.getElementById("for-list")
+        const whileList = document.getElementById("while-list");
+        const fruits = ['apple', "orange ", "kiwi", "cherry"]
+        const foroflist = document.getElementById("forof-list");
+        const onjectList = document.getElementById("object-list")
+
+        const person = {
+                name: "Aarav",
+                age: 22,
+                city: "Bangalore",
+                occupation: "Student"
+            };
+
+
+
+        for(let i =1; i <= 5; i++){
+            const li = document.createElement("li")
+            li.textContent = "Item " + i
+            forList.appendChild(li)
+        }
+
+
+            
+            let j = 1;
+            while (j <= 5) {
+                const li = document.createElement("li");
+                li.textContent = "Item " + j;
+                whileList.appendChild(li);
+                j++;
+            }
+
+
+
+
+            for(let fruit of fruits){
+                const li = document.createElement("li");
+                li.textContent = fruit;
+                foroflist.appendChild(li);
+            }
+
+
+            for (let arun in person){
+                const li = document.createElement("li");
+                li.innerHTML = `## ${arun} : ${person[arun] } ##`
+                onjectList.appendChild(li)
+            }
+
+
+
+            // (function () {
+            //         alert("This is  immediate");
+            //     })();
+
+
+
+            (function (name) {
+                    alert("Hello, " + name);
+                })("Meena");
+
+
+                
+    </script>
+
+    
+</body>
+</html>
