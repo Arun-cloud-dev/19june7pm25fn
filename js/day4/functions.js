@@ -44,7 +44,7 @@
 
 
 
-(function () {
-    alert("This is  immediate");
-})();
+// (function () {
+//     alert("This is  immediate");
+// })();
 

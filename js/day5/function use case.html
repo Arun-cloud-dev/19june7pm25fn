@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2> choose a product </h2>
+
+
+        <select name="" id="productsSelect">
+            <option value="">---Select one---</option>
+            <option value="Mobile">Mobile</option>    
+            <option value="Laptop">Laptop</option>
+            <option value="Tablet">Tablets</option>
+        </select>
+
+        <button onclick="showPrice()"> Check price </button>
+
+        <p id="output"></p>
+
+
+        <script>
+            function showPrice() {
+                let product = document.getElementById('productsSelect').value;
+                price = ""
+                switch(product){
+                    case "Mobile":
+                        price = "price: $20,000";
+                        break;
+                    case "Laptop":
+                        price = "price : $50,000"
+                    case "Tablet":
+                        price = "Price : $15,000"
+                    default:
+                        price = "Please Slect a product "
+                }
+                document.getElementById("output").innerHTML = price;
+            }
+        </script>
+
+</body>
+</html>
