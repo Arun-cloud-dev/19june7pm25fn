@@ -23,21 +23,37 @@
             let input = document.getElementById("taskInput");
             let taskText = input.value;
 
-            if (taskText === "") {
-                alert("Please enter a task!");
-                return;
+
+            if (taskText === ""){
+                alert("please enter the value in text area")
+                return
             }
+
 
             let li = document.createElement("li");
             li.innerText = taskText;
 
 
+            //REMOVE BUTTON CREATION 
+
+            let removeBtn = document.createElement("button")
+            removeBtn.innerText = "Remove"
+
+            removeBtn.style.background = "yellow"
+            removeBtn.addEventListener("click" , function(){
+                li.parentNode.removeChild(li)
+            })
+
+            li.appendChild(removeBtn)
+
+
+
           document.getElementById("tasks").appendChild(li)
+
+          
           input.value= ""
 
-     
         }
-
     </script>
 </body>
 </html>

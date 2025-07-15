@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listiners </title>
+</head>
+<body>
+    <button id="myBtn"> Click me </button>
+
+
+    <input type="text" id="myInput" placeholder="Type Some words ">
+
+
+
+    <script>
+        document.getElementById("myBtn").addEventListener("click" , function(){
+            alert("Button clicked ")
+        })
+
+
+        document.getElementById("myInput").addEventListener("keydown", function(){
+            console.log("key is pressed this many times ");
+            
+        })
+    </script>
+</body>
+</html>
