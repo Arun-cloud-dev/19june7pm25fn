@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="saveBtn()">Save the name </button>
+    <button onclick="getnameBtn()"> Get the name </button>
+
+
+
+    <script>
+        function saveBtn(){
+            sessionStorage.setItem("username", "arun")
+        }
+
+
+        function getnameBtn(){
+                 alert(sessionStorage.getItem("username"));
+        }
+    </script>
+    
+</body>
+</html>
